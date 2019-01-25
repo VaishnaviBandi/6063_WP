@@ -1,0 +1,51 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<script src="form.js"> </script>
+<style>
+h1 {
+  margin: 0px;
+  padding: 10px;
+  font-size: 40px;
+ text-decoration: Underline;
+ color: Teal;
+  }
+  .content {
+  border-style: solid;
+  border-color: DarkGray;
+  border-width: 100px;
+  white-space:pre;
+  padding-left: 50px;
+}
+
+
+</style>
+
+	</head>
+
+	<body>
+		<h1>HEADING</h1>
+<div class="content" id="comment">
+<form name="input" action="index.html" method="post" onsubmit="return check();">
+ Name: <input type="text" onblur="checkTextField(this);"> <p id="error"></p>
+</input>
+Comment:<br>
+  <textarea rows="4" cols="50" onblur="checkTextField(this);">
+</textarea>
+<p id="error1"></p>
+Password: <input type="Password" maxlength="7" autocomplete="off" id="victory">
+<br>
+<input type="submit" class="bigbutton"  value="Comment" onclick="showMessage();">
+<p id="victory"></p>
+<label>Comments: </label>
+  <p><span id="demo"></span></p>
+
+
+</form>
+</div>
+
+	</body>
+</html>
