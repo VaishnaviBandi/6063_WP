@@ -1,0 +1,64 @@
+<head>
+	<h1 style="background-color:LightSeaGreen;"> Quiz </h1>
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<!-- 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ -->	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type = "text/javascript">
+  </script> -->
+	<script src="quiz.js"></script>
+
+
+<style>
+h1 {
+  margin: 0px;
+  padding: 10px;
+  font-size: 40px;
+ text-decoration: overline;
+ text-shadow: 3px 2px Black;
+ color: White;
+  }
+.whole {
+  border-style: solid;
+  border-color: DarkGray;
+  border-width: 100px;
+  white-space:pre;
+  padding-left: 50px;
+}
+</style>
+</head>
+<body onload="load()">
+<div class = "whole">
+	<div class="content" ><i class="fa fa-car"></i>
+		<p id = "q1"></p>
+		<button id= "h1" onclick=hint(id)> Hint </button>
+		<p id = "hint1"> </p>
+		<form>
+			   <input id = "q11" type="radio" onclick=check(id) name="ques1"> <a id = "q111"></a><br>
+			   <input id = "q12" type="radio" onclick=check(id) name="ques1"> <a id = "q122"></a><br>
+			</form>
+			<p id="ans1"> </p>
+		</div>
+	<div class="content"> <i class="fa fa-car"></i>
+        <p id = "q2"></p>
+		<button id= "h2" onclick=hint(id)> Hint </button>
+		<p id = "hint2"> </p>
+		<form>
+			   <input id = "q21" type="radio" onclick=check(id) name="ques2"> <a id = "q211"></a><br>
+			   <input id = "q22" type="radio" onclick=check(id) name="ques2"> <a id = "q222"></a><br>
+			</form>
+			<p id="ans2"> </p>
+		</div>
+	<div class="content"> <i class="fa fa-car"></i>
+        <p id = "q3"></p>
+		<button id= "h3" onclick=hint(id)> Hint </button>
+		<p id = "hint3"> </p>
+		<form>
+			   <input id = "q31" type="radio" onclick=check(id) name="ques3"> <a id = "q311"></a><br>
+			   <input id = "q32" type="radio" onclick=check(id) name="ques3"> <a id = "q322"></a><br>
+			</form>
+			<p id="ans3"> </p>
+		</div> 
+	</div>
+</body>
